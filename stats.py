@@ -1,7 +1,7 @@
-def get_word_count():
+def get_word_count(filename):
     
 	# Calls filepath to set f to file contents and print to terminal
-    with open("books/frankenstein.txt") as f:
+    with open(filename) as f:
         
         # Sets f to actual file variable
         file_contents = f.read()
@@ -38,5 +38,3 @@ def get_word_count():
             # Prints variables by letter then it's number called by %s as string and %d as decimal number
             print('%s: %d' % (letter, dict[letter]))
         print("============= END ===============")
-        
-get_word_count()
